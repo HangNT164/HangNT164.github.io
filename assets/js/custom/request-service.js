@@ -90,12 +90,12 @@ function createRequestTable(data) {
                 render: function(data, type, full, meta) {
                     return `<div class="container">
                     <div class="row">
-                        <div class="col-6" onclick="detailRequest(${meta.row})">
+                        <div class="col-6" onclick="detailRequest(${meta.row})" style="text-align:right;">
                             <a href="#" class="view mr-1" data-target="#detail-apartment-card" title="Quick Detail" data-toggle="modal">
                                 <i class="fas fa-eye fa-fw"></i>
                             </a>
                         </div>
-                        <div class="col-6" onclick="updateRequest(${meta.row})">
+                        <div class="col-6" onclick="updateRequest(${meta.row})" style="text-align:left;">
                             <a href="#" class="edit mr-1" data-toggle="modal" data-target="#update-apartment-card" title="Update">
                                 <i class="fas fa-pen fa-fw"></i></a>
                         </div> 
