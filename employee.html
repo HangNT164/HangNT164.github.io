@@ -495,6 +495,231 @@
       </button>
                 </div>
                 <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Name:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="name" name="name" />
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Gender:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="option1" checked>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+                                <label class="form-check-label" for="gemale">Female</label>
+                            </div>
+                        </div><br/><br/>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Date of birth:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <div id="dp-range">
+                                <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="form-control" autocomplete="off" id="start-date" readonly="readonly">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Phone Number:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="phone-number-add" name="phone-number-add" />
+                        </div>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Email:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="email-add" name="email-add" />
+                        </div>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Identify Card:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="identify-card-add" name="identify-card-add" />
+                        </div>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Current Address:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="current-address-add" name="current-address-add" />
+                        </div>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Home town:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="home-town-add" name="home-town-add" />
+                        </div>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Department Name:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <select class="form-select" aria-label="Default select example">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select> </div>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Is Manager:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="manager-add">
+                                <label class="form-check-label" for="manager-add"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Add Modal -->
+    <!-- Detail Modal -->
+    <div class="modal fade" id="employee-detail" tabindex="-1" role="dialog" aria-labelledby="employee-detail-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="employee-detail-title">Detail Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+                </div>
+                <div class="modal-body">
+                    <br/><br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Name:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="name" name="name" />
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="custom-div-right">Gender:</div>
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                            <input type="text" class="form-control" id="gender-detail" name="gender-detail" />
+                        </div><br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Date of birth:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="dob-detail" name="dob-detail" />
+                            </div>
+                        </div>
+                        <br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Phone Number:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="phone-number-detail" name="phone-number-detail" />
+                            </div>
+                        </div><br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Email:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="email-detail" name="email-detail" />
+                            </div>
+                        </div><br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Identify Card:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="identify-card-detail" name="identify-card-detail" />
+                            </div>
+                        </div><br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Current Address:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="current-address-detail" name="current-address-detail" />
+                            </div>
+                        </div><br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Home town:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="home-town-detail" name="home-town-detail" />
+                            </div>
+                        </div><br/><br/>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-3">
+                                <div class="custom-div-right">Department Name:</div>
+                            </div>
+                            <div class="col-sm-9 col-xs-9">
+                                <input type="text" class="form-control" id="department-detail" name="department-detail" />
+                            </div><br/><br/>
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-3">
+                                    <div class="custom-div-right">Is Manager:</div>
+                                </div>
+                                <div class="col-sm-9 col-xs-9">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="manager-detail">
+                                        <label class="form-check-label" for="manager-detail"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br/><br/><br/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Detail Modal -->
+
+    <!-- Update Modal -->
+    <div class="modal fade" id="employee-update" tabindex="-1" role="dialog" aria-labelledby="employee-update-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="employee-update-title">Update Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+                </div>
+                <div class="modal-body">
                     <br/><br/>
                     <div class="row">
                         <div class="col-sm-3 col-xs-3">
@@ -595,23 +820,50 @@
                             </div>
                         </div>
                     </div><br/><br/><br/>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- End Add Modal -->
+    </div>
+    <!-- End Update Modal -->
 
-        <footer class="footer ">
-            <div class="container text-center py-3 ">
-                <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-                <small class="copyright " style="color: black; ">© 2021 Copyright <i class="fas fa-heart " style="color: #fb866a; "></i> by <a class="app-link " href="index.html " >ams.building.com</a></small>
-
+    <!-- Remove Modal -->
+    <div class="modal fade" id="employee-remove" tabindex="-1" role="dialog" aria-labelledby="employee-remove-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="employee-remove-title">Remove Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true ">&times;</span>
+</button>
+                </div>
+                <div class="modal-body ">
+                    <div class="container">
+                        <p style=" text-align: center;
+            font-size: 20px;
+            color: black;">Do you want to remove this card?</p>
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-danger ">Yes</button>
+                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                </div>
             </div>
-        </footer>
-        <!--//app-footer-->
+        </div>
+    </div>
+    <!-- End Remove Modal -->
+
+    <footer class="footer ">
+        <div class="container text-center py-3 ">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright " style="color: black; ">© 2021 Copyright <i class="fas fa-heart " style="color: #fb866a; "></i> by <a class="app-link " href="index.html " >ams.building.com</a></small>
+
+        </div>
+    </footer>
+    <!--//app-footer-->
 
     </div>
     <!--//app-wrapper-->

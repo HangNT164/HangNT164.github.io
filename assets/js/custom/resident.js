@@ -1,30 +1,15 @@
 $(document).ready(function() {
-    createParkingCardTable([{
-        vehicleOwner: "Title1",
-        vehicleName: "Title1",
-        type: "Title1",
-        color: "Title1",
-        licensePlates: "Title1",
-        status: "Title1",
-    }, {
-        vehicleOwner: "Title1",
-        vehicleName: "Title1",
-        type: "Title1",
-        color: "Title1",
-        licensePlates: "Title1",
-        status: "Title1",
-    }, {
-        vehicleOwner: "Title1",
-        vehicleName: "Title1",
-        type: "Title1",
-        color: "Title1",
-        licensePlates: "Title1",
-        status: "Title1",
-    }]);
+    createResidentTable([{
+        name: "Title1",
+        gender: "dd",
+        dob: "description1",
+        phone: "16/04/1999",
+        email: "16/04/1999",
+    }, ]);
 });
 
-function createParkingCardTable(data) {
-    $('#parking-card-table').DataTable({
+function createResidentTable(data) {
+    $('#resident-table').DataTable({
         destroy: true,
         responsive: true,
         autoWidth: false,
@@ -44,73 +29,65 @@ function createParkingCardTable(data) {
                 }
             },
             {
-                name: "Vehicle Owner",
+                name: "Name",
                 searchable: true,
                 width: "15%",
                 className: "text-center",
-                title: "Vehicle Owner",
-                data: "vehicleOwner"
+                title: "Name",
+                data: "name"
             },
             {
-                name: "Vehicle Name",
+                name: "Gender",
                 searchable: true,
-                width: "15%",
+                width: "10%",
                 className: "text-left",
-                title: "Vehicle Name",
-                data: "vehicleName"
+                title: "Gender",
+                data: "gender"
             },
             {
-                name: "Type",
+                name: "DOB",
                 searchable: true,
-                width: "15%",
+                width: "10%",
                 className: "text-left",
-                title: "Type",
-                data: "type"
+                title: "dob",
+                data: "dob"
             },
+
             {
-                name: "Color",
+                name: "Phone",
                 searchable: true,
-                width: "23%",
+                width: "20%",
                 className: "text-left",
-                title: "Color",
-                data: "color"
-            },
-            {
-                name: "License Plates",
+                title: "phone",
+                data: "phone"
+            }, {
+                name: "Email",
                 searchable: true,
-                width: "9%",
+                width: "20%",
                 className: "text-left",
-                title: "License Plates",
-                data: "licensePlates"
-            },
-            {
-                name: "Status",
-                searchable: true,
-                width: "9%",
-                className: "text-left",
-                title: "Status",
-                data: "status"
+                title: "Email",
+                data: "email"
             },
             {
                 name: "editButton",
                 searchable: false,
-                width: "11%",
+                width: "8%",
                 className: "text-center",
                 title: "Function",
                 data: null,
                 render: function(data, type, full, meta) {
                     return `<div class="container">
                     <div class="row">
-                        <div class="col-4" onclick="detailParkingCard(${meta.row})">
+                        <div class="col-4" onclick="detailResident(${meta.row})">
                             <a href="#" class="view mr-1" data-target="#detail-apartment-card" title="Quick Detail" data-toggle="modal">
                                 <i class="fas fa-eye fa-fw"></i>
                             </a>
                         </div>
-                        <div class="col-4" onclick="updateParkingCard(${meta.row})">
+                        <div class="col-4" onclick="updateResident(${meta.row})">
                             <a href="#" class="edit mr-1" data-toggle="modal" data-target="#update-apartment-card" title="Update">
                                 <i class="fas fa-pen fa-fw"></i></a>
                         </div>
-                        <div class="col-4" onclick="removeParkingCard(${meta.row})">
+                        <div class="col-4" onclick="removeResident(${meta.row})">
                             <a href="#" class="remove mr-1" data-toggle="modal" data-target="#remove-apartment-card" title="Remove">
                                 <i class="fas fa-trash fa-fw"></i></a>
                         </div>
@@ -123,14 +100,14 @@ function createParkingCardTable(data) {
     });
 }
 
-function detailParkingCard(index) {
-    $("#parking-card-detail").modal('show');
+function detailResident() {
+    $("#resident-detail").modal('show');
 }
 
-function updateParkingCard(index) {
-    $("#parking-card-update").modal('show');
+function updateResident() {
+    $("#resident-update").modal('show');
 }
 
-function removeParkingCard(index) {
-    $("#parking-card-remove").modal('show');
+function removeResident() {
+    $("#resident-remove").modal('show');
 }
