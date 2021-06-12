@@ -484,7 +484,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="parking-card-detail-title">Detail Parking Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#parking-card-detail`));">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -562,7 +562,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#parking-card-detail`));">Close</button>
                 </div>
             </div>
         </div>
@@ -575,7 +575,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="parking-card-update-title">Update Parking Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#parking-card-update`));">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -596,7 +596,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#parking-card-update`));">Close</button>
                 </div>
             </div>
         </div>
@@ -609,7 +609,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="parking-card-remove-title">Remove Parking Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#parking-card-remove`));">
             <span aria-hidden="true ">&times;</span>
           </button>
                 </div>
@@ -622,7 +622,7 @@
                 </div>
                 <div class="modal-footer ">
                     <button type="button " class="btn btn-danger ">Yes</button>
-                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-secondary " onclick="closeDialog($(`#parking-card-remove`));">No</button>
                 </div>
             </div>
         </div>

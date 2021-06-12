@@ -532,7 +532,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-card-add`));">Close</button>
                 </div>
             </div>
         </div>
@@ -545,7 +545,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-card-detail-title">Detail Apartment Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-card-detail`));"> 
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -587,7 +587,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-card-detail`));">Close</button>
                 </div>
             </div>
         </div>
@@ -600,7 +600,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-card-update-title">Update Apartment Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-card-update`));">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -621,7 +621,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-card-update`));">Close</button>
                 </div>
             </div>
         </div>
@@ -634,7 +634,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-card-remove-title">Remove Apartment Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-card-remove`));">
             <span aria-hidden="true ">&times;</span>
           </button>
                 </div>
@@ -647,7 +647,7 @@
                 </div>
                 <div class="modal-footer ">
                     <button type="button " class="btn btn-danger ">Yes</button>
-                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-secondary " onclick="closeDialog($(`#apartment-card-remove`));">No</button>
                 </div>
             </div>
         </div>

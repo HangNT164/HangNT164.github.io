@@ -482,7 +482,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-add-first-title">Add Apartment</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-add-first`));">
         <span aria-hidden="true">&times;</span>
       </button>
                 </div>
@@ -516,7 +516,7 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" onclick="openDialodAddSecond();">Next</button>
-                    <button type="button" class="btn btn-secondary">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-add-first`));">Close</button>
                 </div>
             </div>
         </div>
@@ -529,7 +529,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-add-second-title">Add Information Householder</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-add-second`));">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
@@ -632,7 +632,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-add-thrid-title"> Add Relatives</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-add-thrid`));">
                 <span aria-hidden="true">&times;</span>
             </button>
                 </div>
@@ -746,7 +746,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-add-confirm-title">Comfirm Information Add</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-add-confirm`));">
     <span aria-hidden="true">&times;</span>
   </button>
                 </div>
@@ -879,7 +879,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Add</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-add-confirm`));">Close</button>
                 </div>
             </div>
         </div>
@@ -892,7 +892,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-detail-title">Detail Apartment</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-detail`));">
                         <span aria-hidden="true">&times;</span>
                       </button>
                 </div>
@@ -1024,7 +1024,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-detail`));">Close</button>
                 </div>
             </div>
         </div>
@@ -1037,7 +1037,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-update-title-first">Update Information Householder</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-update-first`));">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -1127,7 +1127,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" onclick="openUpdateRelation()">Next</button>
-                    <button type="button" class="btn btn-secondary">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-update-first`));">Close</button>
                 </div>
             </div>
         </div>
@@ -1140,7 +1140,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-update-second-first"> Updated Relatives</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-update-second`));">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
@@ -1254,7 +1254,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="apartment-update-confirm-title">Comfirm Information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#apartment-update-confirm`));">
         <span aria-hidden="true">&times;</span>
       </button>
                 </div>
@@ -1387,7 +1387,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Update</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#apartment-update-confirm`));">Close</button>
                 </div>
             </div>
         </div>

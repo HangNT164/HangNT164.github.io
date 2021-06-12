@@ -479,7 +479,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="resident-detail-title">Detail Resident</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#resident-detail`));">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -560,7 +560,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#resident-detail`));">Close</button>
                 </div>
             </div>
         </div>
@@ -573,7 +573,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="resident-update-title">Update Resident</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#resident-update`));">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -677,7 +677,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDialog($(`#resident-update`));">Close</button>
                 </div>
             </div>
         </div>
@@ -690,7 +690,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="resident-remove-title">Remove Resident</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeDialog($(`#resident-remove`));">
             <span aria-hidden="true ">&times;</span>
           </button>
                 </div>
@@ -703,7 +703,7 @@
                 </div>
                 <div class="modal-footer ">
                     <button type="button " class="btn btn-danger ">Yes</button>
-                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-secondary " onclick="closeDialog($(`#resident-remove`));">No</button>
                 </div>
             </div>
         </div>
