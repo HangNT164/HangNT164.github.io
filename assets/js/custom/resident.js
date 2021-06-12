@@ -1,10 +1,8 @@
 $(document).ready(function() {
     createResidentTable([{
         name: "Title1",
-        gender: "dd",
-        dob: "description1",
-        phone: "16/04/1999",
-        email: "16/04/1999",
+        phoneNumber: "16/04/1999",
+        room: "16/04/1999",
     }, ]);
 });
 
@@ -20,7 +18,7 @@ function createResidentTable(data) {
         columns: [{
                 name: "No",
                 searchable: false,
-                width: "5%",
+                width: "15%",
                 className: "text-center",
                 title: "No",
                 data: null,
@@ -31,47 +29,31 @@ function createResidentTable(data) {
             {
                 name: "Name",
                 searchable: true,
-                width: "15%",
+                width: "25%",
                 className: "text-center",
                 title: "Name",
                 data: "name"
             },
             {
-                name: "Gender",
+                name: "Phone Number",
                 searchable: true,
-                width: "10%",
+                width: "25%",
                 className: "text-left",
-                title: "Gender",
-                data: "gender"
+                title: "Phone Number",
+                data: "phoneNumber"
             },
             {
-                name: "DOB",
+                name: "Room Number",
                 searchable: true,
-                width: "10%",
+                width: "25%",
                 className: "text-left",
-                title: "dob",
-                data: "dob"
-            },
-
-            {
-                name: "Phone",
-                searchable: true,
-                width: "20%",
-                className: "text-left",
-                title: "phone",
-                data: "phone"
-            }, {
-                name: "Email",
-                searchable: true,
-                width: "20%",
-                className: "text-left",
-                title: "Email",
-                data: "email"
+                title: "Room Number",
+                data: "room"
             },
             {
                 name: "editButton",
                 searchable: false,
-                width: "8%",
+                width: "10%",
                 className: "text-center",
                 title: "Function",
                 data: null,

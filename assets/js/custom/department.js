@@ -2,11 +2,13 @@ $(document).ready(function() {
     createDepartmentTable([{
         title: "Title1",
         departmentName: "description1",
-        departmentManager: "16/04/1999"
+        departmentManager: "16/04/1999",
+        phoneNumber: "0942578685"
     }, {
         title: "Title1",
         departmentName: "description1",
-        departmentManager: "16/04/1999"
+        departmentManager: "16/04/1999",
+        phoneNumber: "0942578685"
     }]);
     createDepartmentTableDetail([{
         name: "Title1",
@@ -59,7 +61,7 @@ function createDepartmentTable(data) {
             {
                 name: "Department Name",
                 searchable: true,
-                width: "40%",
+                width: "30%",
                 className: "text-center",
                 title: "Department Name",
                 data: "departmentName"
@@ -67,10 +69,18 @@ function createDepartmentTable(data) {
             {
                 name: "Department Manager",
                 searchable: true,
-                width: "38%",
+                width: "30%",
                 className: "text-left",
                 title: "Department Manager",
                 data: "departmentManager"
+            },
+            {
+                name: "Phone Number",
+                searchable: true,
+                width: "22%",
+                className: "text-left",
+                title: "Phone Number",
+                data: "phoneNumber"
             },
             {
                 name: "editButton",

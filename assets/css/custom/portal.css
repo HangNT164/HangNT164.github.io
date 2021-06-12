@@ -12327,3 +12327,12 @@ button.close:focus {
         width: 100%
     }
 }
+
+.custom-div-right {
+    text-align: right;
+    padding: 6px 12px;
+}
+
+.modal {
+    overflow: auto;
+}

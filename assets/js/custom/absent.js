@@ -25,23 +25,15 @@ function createAbsentTable(data) {
             {
                 name: "Name",
                 searchable: true,
-                width: "10%",
+                width: "15%",
                 className: "text-center",
                 title: "Name",
                 data: "name"
             },
             {
-                name: "DOB",
-                searchable: true,
-                width: "15%",
-                className: "text-center",
-                title: "DOB",
-                data: "dob"
-            },
-            {
                 name: "Identify Card ",
                 searchable: true,
-                width: "10%",
+                width: "15%",
                 className: "text-center",
                 title: "Identify Card",
                 data: "identifyCard"
@@ -57,7 +49,7 @@ function createAbsentTable(data) {
             {
                 name: "Home Town",
                 searchable: true,
-                width: "15%",
+                width: "10%",
                 className: "text-center",
                 title: "Home Town",
                 data: "homeTown"
@@ -81,7 +73,7 @@ function createAbsentTable(data) {
             {
                 name: "Start Date",
                 searchable: true,
-                width: "8%",
+                width: "12%",
                 className: "text-center",
                 title: "Start Date",
                 data: "startDate"
@@ -89,7 +81,7 @@ function createAbsentTable(data) {
             {
                 name: "End Date",
                 searchable: true,
-                width: "9%",
+                width: "13%",
                 className: "text-center",
                 title: "End Date",
                 data: "endDate"

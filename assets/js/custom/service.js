@@ -55,23 +55,11 @@ function createServiceTable(data) {
                 title: "Function",
                 data: null,
                 render: function(data, type, full, meta) {
-                    return `<div class="container">
-                    <div class="row">
-                        <div class="col-4" onclick="detailService(${meta.row})">
-                            <a href="#" class="view mr-1" data-target="#detail-apartment-card" title="Quick Detail" data-toggle="modal">
-                                <i class="fas fa-eye fa-fw"></i>
-                            </a>
-                        </div>
-                        <div class="col-4" onclick="updateService(${meta.row})">
-                            <a href="#" class="edit mr-1" data-toggle="modal" data-target="#update-apartment-card" title="Update">
-                                <i class="fas fa-pen fa-fw"></i></a>
-                        </div>
-                        <div class="col-4" onclick="removeService(${meta.row})">
-                            <a href="#" class="remove mr-1" data-toggle="modal" data-target="#remove-apartment-card" title="Remove">
-                                <i class="fas fa-trash fa-fw"></i></a>
-                        </div>
-                    </div>
-                </div>`
+                    return `<div class="container" onclick="detailService(${meta.row})">
+                                <a href="#" class="view mr-1" data-target="#detail-apartment-card" title="Quick Detail" data-toggle="modal">
+                                    <i class="fas fa-eye fa-fw"></i>
+                                </a>
+                            </div>`
                 }
             },
         ],
@@ -81,20 +69,4 @@ function createServiceTable(data) {
 
 function detailService(index) {
     $("#service-detail").modal('show');
-}
-
-function updateService(index) {
-    $("#service-update").modal('show');
-}
-
-function removeService(index) {
-    $("#service-remove").modal('show');
-}
-
-function addSubService() {
-    $("#sub-service-add").modal('show');
-}
-
-function addService() {
-    $("#service-add").modal('show');
 }
