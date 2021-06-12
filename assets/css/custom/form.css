@@ -64,7 +64,7 @@ h6 {
     padding: 1.5rem 2rem 1rem;
     margin-bottom: 30px;
     border-radius: .2rem;
-    background-color: #3bac47;
+    background-color: #008634;
 }
 
 .logo {
@@ -290,7 +290,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #3bac47;
+    background-color: #008634;
     z-index: 1000;
 }
 
