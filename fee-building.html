@@ -16,6 +16,11 @@
     <!-- FontAwesome JS-->
     <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
 
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/custom/style.css">
+    <link rel="stylesheet" href="assets/css/custom/classic.css">
+    <link rel="stylesheet" href="assets/css/custom/classic.date.css">
+
     <!-- App CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/custom/portal.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/custom/notficaition-table.css">
@@ -424,12 +429,8 @@
                                         <div class="row" style="padding: 0px;margin: 0px;">
                                             <div class="col-md-2">
                                                 <div class="form-group" style="margin-right: 30px;padding: 0px;">
-                                                    <label for="date">Month:</label><br>
-                                                    <div id="dp-range">
-                                                        <div class="input-daterange input-group" id="datepicker">
-                                                            <input type="text" class="form-control" autocomplete="off" id="start-date" readonly="readonly">
-                                                        </div>
-                                                    </div>
+                                                    <label for="input_from">Month:</label><br>
+                                                    <input type="text" class="form-control" id="input_from">
                                                 </div>
                                             </div>
                                             <div class="col-md-1" style="margin-top: 30px;">
@@ -493,6 +494,11 @@
     <script src="assets/js/plugin/dataTables.bootstrap4.min.js "></script>
     <script src="assets/plugins/popper.min.js "></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js "></script>
+
+    <!--Bootstrap Datepicker [ OPTIONAL ]-->
+    <script src="assets/js/plugin/main.js"></script>
+    <script src="assets/js/plugin/picker.js"></script>
+    <script src="assets/js/plugin/picker.date.js"></script>
 
     <!-- Charts JS -->
     <script src="assets/plugins/chart.js/chart.min.js "></script>
